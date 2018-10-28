@@ -78,9 +78,11 @@ function returnCounter(number = 0) {
 function returnArgumentsArray() {
 
     const allarguments = [];
+
     for (let i = 0; i < arguments.length; i++) {
-      allarguments[i] = arguments[i];
+        allarguments[i]=arguments[i];
     }
+
     return allarguments;
 }
 
@@ -99,9 +101,9 @@ function returnArgumentsArray() {
 
    console.log(newSum()) выведет 6
  */
-function bindFunction(fn, a, b) {
-  fn = fn.bind(a, b);
-  return fn;
+function bindFunction(fn, ...allarguments) {
+
+    return fn.bind(null, ...allarguments);
 }
 
 export {
