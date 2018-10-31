@@ -1,5 +1,5 @@
 ## LoftSchool example project
-
+## test 2 branch
 ### Доступные команды
 
 * `npm install` - установить зависимости
