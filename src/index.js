@@ -58,12 +58,12 @@ function isAllTrue(array, fn) {
  */
 function isSomeTrue(array, fn) {
 
-    if (typeof fn != 'function') {
-        throw new Error ('fn is not a function');
-    }
-
     if (!(array instanceof Array) || array.length === 0) {
         throw new Error('empty array');
+    }
+
+    if (typeof fn != 'function') {
+        throw new Error ('fn is not a function');
     }
 
     let arrayresult = false;
@@ -105,9 +105,7 @@ function returnBadArguments(fn) {
             if (fn(arguments[i])) {
                 throw new Error();
             }   
-        }
-
-        catch (e) {
+        } catch (e) {
             argumentsArray.push(arguments[i]);
         }
 
