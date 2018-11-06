@@ -1,5 +1,5 @@
 ## LoftSchool example project
-
+# task5
 ### Доступные команды
 
 * `npm install` - установить зависимости
